@@ -1,7 +1,6 @@
 
 import { useState, useEffect } from 'react';
 import { Element, scroller } from 'react-scroll';
-import { motion } from 'framer-motion';
 import { UserCircle, School, BookOpen, Briefcase, FileBadge, Code, HeartHandshake, Mail, Share2 } from 'lucide-react';
 
 // Import components
@@ -81,7 +80,7 @@ function App() {
 
       <ProfileSection
         language={language}
-        content={content}
+        content={content as any}
         scrollToSection={scrollToSection}
       />
 

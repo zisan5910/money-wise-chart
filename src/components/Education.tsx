@@ -63,10 +63,7 @@ const Education = ({ language }: EducationProps) => {
 
   return (
     <Element name="education">
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-100px' }}
+      <section
         className="bg-white p-6 rounded-lg shadow-md"
         aria-labelledby="education-heading"
       >
@@ -82,10 +79,10 @@ const Education = ({ language }: EducationProps) => {
           {educationHistory.map((education) => (
             <motion.div
               key={education.id}
-              initial={{ x: -20, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ type: 'spring', stiffness: 100 }}
+              transition={{ duration: 0.5 }}
               className="border-l-4 border-green-600 pl-4 py-4 hover:bg-green-50 rounded-r-lg transition-colors duration-200 group"
             >
               <div className="flex items-start gap-4">
@@ -121,7 +118,7 @@ const Education = ({ language }: EducationProps) => {
             </motion.div>
           ))}
         </div>
-      </motion.section>
+      </section>
     </Element>
   );
 };
