@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -17,6 +18,15 @@ export default {
           900: '#0c4a6e',
           950: '#082f49',
         },
+        finance: {
+          purple: '#9b87f5',
+          'deep-purple': '#7E69AB',
+          'light-purple': '#E5DEFF',
+          'bright-blue': '#33C3F0',
+          success: '#10B981',
+          warning: '#F59E0B',
+          danger: '#EF4444',
+        }
       },
       animation: {
         'gradient-x': 'gradient-x 15s ease infinite',
